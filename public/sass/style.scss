@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: $position;
+  justify-content: $position;
   height: $height;
 }
 
@@ -14,21 +15,32 @@
   align-items: center;
 }
 
-@mixin box($borderCol) {
+@mixin box ($borderCol) {
   .box {
+    @include flexCol(center);
     padding: 100;
     margin: 100;
-    border: 3px solid $borderCol;
+    border: 10px solid $borderCol;
+    border-radius: 100%;
+    position: relative;
+    width: 12vw;
+    height: 12.5vw;
+    transition-duration: 0.4s;
+    &:hover {
+      transform: scale(1.2);
+      border-radius: 0%;
+    }
   }
 }
 
 @mixin hover() {
   &:hover {
     color: $color_3;
-    transform: scale(0.8);
+    transform: scale(1.3);
   }
   transition-duration: 0.2s;
 }
+
 
 body {
   font-family: $font_family;
@@ -52,6 +64,12 @@ body {
     @include flexRow(flex-end);
     padding-top: 30px;
 
+    .resume {
+      border: 2px solid $color_1;
+      text-decoration: none;
+      padding: 5px 8px;
+    }
+
     .nav-circle {
       position: fixed;
       top: 25;
@@ -60,6 +78,15 @@ body {
       width: 60px;
       border-radius: 100%;
       background-color: $color_1;
+      &:hover {
+        width:0;
+        height:0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 50px solid $color_1;
+        background-color: transparent;
+        border-radius: 0%;
+      }
     }
 
     a {
@@ -68,24 +95,27 @@ body {
       color: $color_1;
       margin-right: 75px;
       display: inline-block;
+      // text-decoration: none;
     }
   }
 
   .intro-text {
-    padding: 200px;
-    text-align: center;
+    padding: 200px 100px;
+    // text-align: center;
     height: 10vh;
 
     h1 {
       font-size: $font_h1;
       color: $color_1;
       margin: 0;
-      animation: animated-text 2s steps(30,end) 1s 1 normal both;
     }
 
-    p {
+    h2 {
       margin-top: 0;
-      font-size: $font_p;
+      font: {
+        size: $font_h2;
+        weight: 300;
+      } 
       color: $color_1;
     }
   }
@@ -120,8 +150,8 @@ body {
   @include flexCol(flex-start);
   height: fit-content;
   background-color: $color_3;
-  padding-left: 150px;
-  color: $liteColor2;
+  padding-left: 50px;
+  color: $color_2;
   margin: 100px;
 
   ul {
@@ -141,6 +171,11 @@ body {
     font-family: $font_family2;
     font-weight: 100;
     margin: 0;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+      color: $color_4;
+    };
   }
 
   h3 {
@@ -154,25 +189,45 @@ body {
   }
 }
 
+//THIRD PAGE - CHOICE
+
+
 .choice {
   @include flexRow(space-around);
-  background-color: $color_2;
-  color: $color_1;
+  align-items: stretch;
+  color: $color_2;
+  text-align: center;
+
+  p {
+    margin: 0;
+    white-space: nowrap;
+    font: {
+      family: $font_family2;
+      size: $font_p;
+    }  
+  }
+
+  h1 {
+    font-size: $font_h3;
+    white-space: nowrap;
+  }
   
   .about-div {
     @include flexCol(center);
-    @include box($color_2);
-    background-color: $color_1;
-    color: $color_2;
-    width: 50%;
-    height: fit-content
+    @include box($color_1);
+    height: 100vh;
+    background-color: $color_2;
+    color: $color_1;
+    width: 50vw;
+    
   }
 
   .contact-div {
     @include flexCol(center);
-    @include box($color_1);
-    height: fit-content;
-    width: 50%;
+    @include box($color_2);
+    height: 100vh;
+    background-color: $color_1;
+    width: 50vw;
   }
 
 
