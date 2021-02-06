@@ -1,0 +1,180 @@
+@import '_variables';
+
+@mixin flexCol ($position) {
+  display: flex;
+  flex-direction: column;
+  align-items: $position;
+  height: $height;
+}
+
+@mixin flexRow ($position) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $position;
+  align-items: center;
+}
+
+@mixin box($borderCol) {
+  .box {
+    padding: 100;
+    margin: 100;
+    border: 3px solid $borderCol;
+  }
+}
+
+@mixin hover() {
+  &:hover {
+    color: $color_3;
+    transform: scale(0.8);
+  }
+  transition-duration: 0.2s;
+}
+
+body {
+  font-family: $font_family;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: $cursor;
+  a {
+    cursor: $cursor;
+  }
+}
+
+//FIRST PAGE - HOOK
+
+.hook {
+  background-color: $color_2;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+
+  .nav-bar { 
+    @include flexRow(flex-end);
+    padding-top: 30px;
+
+    .nav-circle {
+      position: fixed;
+      top: 25;
+      left: 40;
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      background-color: $color_1;
+    }
+
+    a {
+      @include hover();
+      font-size: $font_p;
+      color: $color_1;
+      margin-right: 75px;
+      display: inline-block;
+    }
+  }
+
+  .intro-text {
+    padding: 200px;
+    text-align: center;
+    height: 10vh;
+
+    h1 {
+      font-size: $font_h1;
+      color: $color_1;
+      margin: 0;
+      animation: animated-text 2s steps(30,end) 1s 1 normal both;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: $font_p;
+      color: $color_1;
+    }
+  }
+
+  .icon-bar {
+    @include flexRow(space-between);
+    height: 30vh;
+    align-items: flex-end;
+
+    .btm {
+      height: 20vh;
+      width: 80vw;
+      &:hover {
+        cursor: $cursorDown;
+      }
+    }
+
+    .fa {
+      @include hover();
+      color: $color_1;
+      text-decoration: none;
+      padding-right: 30px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
+//SECOND PAGE - PROJECTS
+
+.projects {
+  @include flexCol(flex-start);
+  height: fit-content;
+  background-color: $color_3;
+  padding-left: 150px;
+  color: $liteColor2;
+  margin: 100px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80vw;
+
+    li {
+      padding: 3rem 0;
+      border-bottom: 1px solid $color_2;
+    }
+  }
+
+  h2 {
+    font-size: 6rem;
+    font-family: $font_family2;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  h3 {
+    font: {
+      size: $font_h3;
+      family: $font_family;
+    }
+    text-decoration: underline;
+    margin: 0;
+    // color: $liteColor2;
+  }
+}
+
+.choice {
+  @include flexRow(space-around);
+  background-color: $color_2;
+  color: $color_1;
+  
+  .about-div {
+    @include flexCol(center);
+    @include box($color_2);
+    background-color: $color_1;
+    color: $color_2;
+    width: 50%;
+    height: fit-content
+  }
+
+  .contact-div {
+    @include flexCol(center);
+    @include box($color_1);
+    height: fit-content;
+    width: 50%;
+  }
+
+
+}
+
