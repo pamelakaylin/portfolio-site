@@ -1,0 +1,116 @@
+@-webkit-keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  cursor: url(../images/cursorXS.png), auto;
+}
+
+body a {
+  cursor: url(../images/cursorXS.png), auto;
+}
+
+.hook {
+  background-color: #141e55;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hook .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.hook .nav-bar .resume {
+  border: 2px solid #f5c519;
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+.hook .nav-bar .nav-circle {
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  background-color: #f5c519;
+}
+
+.hook .nav-bar .nav-circle:hover {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #f3e73f;
+  background-color: transparent;
+  border-radius: 0%;
+}
+/*# sourceMappingURL=style.css.map */
