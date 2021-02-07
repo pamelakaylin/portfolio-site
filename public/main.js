@@ -1,17 +1,26 @@
 $(() => {
+  const color = $('.nav-circle').css('background-color');
+
+  $('.nav-circle').hover(function () {
+    console.log(this);
+    this.innerHTML = '&#128640;';
+    $(this).css('background-color','transparent');
+  }, function () {
+    this.innerHTML = '';
+    $(this).css('background-color', color);
+  })
+
   const contentList = [
-    "Pamela Kaylin Chen", 
+    'Pamela Kaylin', 
     'Full-stack engineer', 
     'Welcome to my universe', 
     'I create my own world.'
   ];
 
   let text = $('#type-text')[0];
-  let cursor = $('.cursor')[0];
   let intervalFunc;
   let sentence = 0;
   let index = 0;
-  cursor.style.display = 'none';
 
   function typeText () {
     let letter = contentList[sentence][index];
@@ -24,15 +33,12 @@ $(() => {
         setTimeout(() => {
           intervalFunc = setInterval(deleteText, 50);
         }, 1000);
-      } else cursor.style.display = 'inline-block';
-
+      }
     }
-
   }
 
   function deleteText () {
     let written = text.innerHTML.substring(0,index-1);
-    console.log(written)
     text.innerHTML = written;
     index--;
 
@@ -44,12 +50,12 @@ $(() => {
       },500);
       
     }
-
-
   }
 
   setTimeout(() => {
     intervalFunc = setInterval(typeText, 100);
   }, 1000);
+
+
 
 })

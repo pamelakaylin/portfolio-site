@@ -57,7 +57,7 @@ body a {
 }
 
 .hook {
-  background-color: #141e55;
+  background-color: #16134b;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,7 +324,7 @@ body a {
   height: fit-content;
   background-color: #fffefb;
   padding-left: 50px;
-  color: #141e55;
+  color: #16134b;
   margin: 100px;
 }
 
@@ -337,7 +337,7 @@ body a {
 
 .projects ul li {
   padding: 3rem 0;
-  border-bottom: 1px solid #141e55;
+  border-bottom: 1px solid #16134b;
 }
 
 .projects h2 {
@@ -376,7 +376,7 @@ body a {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  color: #141e55;
+  color: #16134b;
   text-align: center;
 }
 
@@ -408,7 +408,7 @@ body a {
           justify-content: center;
   height: 100vh;
   height: 100vh;
-  background-color: #141e55;
+  background-color: #16134b;
   color: #f5c519;
   width: 50vw;
 }
@@ -482,7 +482,7 @@ body a {
   height: 100vh;
   padding: 100;
   margin: 100;
-  border: 10px solid #141e55;
+  border: 10px solid #16134b;
   border-radius: 100%;
   position: relative;
   width: 12vw;
