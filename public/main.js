@@ -5,6 +5,7 @@ $(() => {
     console.log(this);
     this.innerHTML = '&#128640;';
     $(this).css('background-color','transparent');
+    $(this).css('cursor','none');
   }, function () {
     this.innerHTML = '';
     $(this).css('background-color', color);

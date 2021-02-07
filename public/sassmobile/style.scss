@@ -32,6 +32,7 @@
     &:hover {
       transform: scale(1.2);
       border-radius: 0%;
+      cursor: none;
     }
   }
 }
@@ -42,6 +43,7 @@
     color: $color_3;
     transform: scale(1.2);
   }
+  cursor: none;
 }
 
 @keyframes animateWorld {
@@ -305,13 +307,13 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  margin: 10vw;
+  margin: 10vh 10vw; 
   background-color: $color_3;
   color: $color_2;
   white-space: nowrap;
 
   @media only screen and (min-width: 1025px) {
-  margin: 8vw;
+    margin: 8vw;
   }
 
   ul {
@@ -343,7 +345,7 @@ body {
 
   h3 {
     font: {
-      size: 8vw;
+      size: 7vw;
       family: $font_family; 
     }
     margin: 0;
@@ -404,4 +406,74 @@ body {
   }  
 
 }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 18vh 10vw;
+  color: $color_2;
+  // background: $color_2;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  } 
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      h1 {
+        font-size: $font_h1;
+      }
+      p {
+        font-size: $font_h2;
+      }
+    } 
+
+    @media only screen and (min-width: 1025px) {
+      align-items: flex-start;
+      text-align: left;
+    } 
+  }
+
+  .profile {
+    margin: 10vw;
+    padding: 5vw;
+    border: 3px solid $color_1;
+    @media only screen and (min-width: 1024px) {
+      margin: 5vw;
+      padding: 2vw;
+    } 
+    
+    img {
+      max-height: 40vh;
+      filter: grayscale(100%) contrast(110%) brightness(110%);
+      &:hover {
+        filter: grayscale(10%);
+        cursor: none;
+      }
+      @media only screen and (min-width: 768px) {
+        max-height: 65vh;
+      } 
+    }
+
+  }
+
+}
+
+.tech-stack {
+  background: $color_2;
+  color: $color_1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 

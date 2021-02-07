@@ -111,6 +111,7 @@ body a {
 .hook .side-bar a {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  cursor: none;
   text-decoration: none;
   color: #f5c519;
   margin-top: 1vw;
@@ -150,6 +151,7 @@ body a {
 .hook .icon-div a {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  cursor: none;
   color: #f5c519;
   text-decoration: none;
   margin-top: 1vw;
@@ -190,6 +192,7 @@ body a {
 .hook .nav-bar .resume {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  cursor: none;
   border: 2px solid #f5c519;
   display: inline-block;
   text-decoration: none;
@@ -378,6 +381,7 @@ body a {
 .hook .arrow-down a {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  cursor: none;
 }
 
 .hook .arrow-down a:hover {
@@ -409,7 +413,7 @@ body a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 10vw;
+  margin: 10vh 10vw;
   background-color: #fffefb;
   color: #16134b;
   white-space: nowrap;
@@ -453,7 +457,7 @@ body a {
 }
 
 .projects h3 {
-  font-size: 8vw;
+  font-size: 7vw;
   font-family: "Roboto Mono", monospace;
   margin: 0;
 }
@@ -538,6 +542,7 @@ body a {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   border-radius: 0%;
+  cursor: none;
 }
 
 .choice .contact-div {
@@ -588,6 +593,7 @@ body a {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   border-radius: 0%;
+  cursor: none;
 }
 
 @media only screen and (min-width: 1425px) {
@@ -596,5 +602,112 @@ body a {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 18vh 10vw;
+  color: #16134b;
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about-me .profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me .profile-text h1 {
+    font-size: 4rem;
+  }
+  .about-me .profile-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-me .profile-text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.about-me .profile {
+  margin: 10vw;
+  padding: 5vw;
+  border: 3px solid #f5c519;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-me .profile {
+    margin: 5vw;
+    padding: 2vw;
+  }
+}
+
+.about-me .profile img {
+  max-height: 40vh;
+  -webkit-filter: grayscale(100%) contrast(110%) brightness(110%);
+          filter: grayscale(100%) contrast(110%) brightness(110%);
+}
+
+.about-me .profile img:hover {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+  cursor: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me .profile img {
+    max-height: 65vh;
+  }
+}
+
+.tech-stack {
+  background: #16134b;
+  color: #f5c519;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
