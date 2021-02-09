@@ -1,4 +1,13 @@
 $(() => {
+  $('.emoji-div').slick({
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  });
+
   const color = $('.nav-circle').css('background-color');
 
   $('.nav-circle').hover(function () {

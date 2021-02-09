@@ -8,13 +8,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 18vh 10vw;
+  padding: 13vh 10vw;
   color: $color_2;
   background-color: $color_3;
 
   @media only screen and (min-width: 1025px) {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
     padding-top: 18vh;
     padding-bottom: 18vh;
     padding-left: 15vw;
@@ -28,6 +29,7 @@
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
+    padding-top: 8vh;
 
     .inner-text {
       display: flex;
@@ -111,6 +113,10 @@
         border-radius: 50%;
         border: 2px solid $color_2;
         transition-duration: 0.2s;
+        @media only screen and (min-width: 1025px) {
+          height: 2.4vh;
+          width: 2.4vh;
+        }
 
         &:hover {
           background-color: #eee;
