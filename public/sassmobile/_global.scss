@@ -1,0 +1,17 @@
+@import '_variables';
+@import '_mixin';
+@import '_keyframes';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font_family;
+  margin: 0;
+  cursor: $cursor;
+  a {
+    cursor: $cursor;
+  }
+}

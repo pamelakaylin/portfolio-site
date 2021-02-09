@@ -2,9 +2,9 @@ $(() => {
   const color = $('.nav-circle').css('background-color');
 
   $('.nav-circle').hover(function () {
-    console.log(this);
     this.innerHTML = '&#128640;';
     $(this).css('background-color','transparent');
+    $(this).css('text-decoration','none');
     $(this).css('cursor','none');
   }, function () {
     this.innerHTML = '';
@@ -22,6 +22,8 @@ $(() => {
   let intervalFunc;
   let sentence = 0;
   let index = 0;
+
+  $('.text-container').css('text-decoration', 'none')
 
   function typeText () {
     let letter = contentList[sentence][index];

@@ -44,9 +44,79 @@
   }
 }
 
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,6 +127,52 @@ body {
 
 body a {
   cursor: url(../images/cursorXS.png), auto;
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
 }
 
 .hook {
@@ -91,6 +207,13 @@ body a {
   }
 }
 
+@media (min-width: 768px) {
+  .hook .nav-circle {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
 .hook .side-bar {
   display: none;
   -webkit-box-orient: vertical;
@@ -114,7 +237,8 @@ body a {
   cursor: none;
   text-decoration: none;
   color: #f5c519;
-  margin-top: 1vw;
+  margin-top: 2.4vh;
+  font-size: 1.2rem;
 }
 
 .hook .side-bar a:hover {
@@ -144,8 +268,8 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 3vw;
-  top: 7vw;
+  left: 3.5vw;
+  top: 7.5vw;
 }
 
 .hook .icon-div a {
@@ -154,7 +278,7 @@ body a {
   cursor: none;
   color: #f5c519;
   text-decoration: none;
-  margin-top: 1vw;
+  margin-top: 1.1vw;
 }
 
 .hook .icon-div a:hover {
@@ -194,9 +318,10 @@ body a {
           transition-duration: 0.2s;
   cursor: none;
   border: 2px solid #f5c519;
+  border-radius: 8%;
   display: inline-block;
   text-decoration: none;
-  padding: 5px 8px;
+  padding: 1vh 2vw;
   color: #f5c519;
   font-size: 1.2rem;
 }
@@ -205,6 +330,21 @@ body a {
   color: #fffefb;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media (min-width: 1440px) {
+  .hook .nav-bar .resume {
+    border-radius: 0%;
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .hook .nav-bar .resume {
+    margin-top: 2.5vh;
+    font-size: 1.9rem;
+  }
 }
 
 .hook .intro-text {
@@ -396,6 +536,52 @@ body a {
   }
 }
 
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,6 +651,52 @@ body a {
 @media only screen and (min-width: 1025px) {
   .projects h3 {
     font-size: 3vw;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
   }
 }
 
@@ -604,6 +836,52 @@ body a {
   }
 }
 
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,6 +923,7 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -665,21 +944,38 @@ body a {
   }
 }
 
+.about-me .scale-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.about-me .scale-wrapper input {
+  background-color: #16134b;
+}
+
 .about-me .profile {
   margin: 10vw;
   padding: 5vw;
-  border: 3px solid #f5c519;
+  border: 6px solid #f5c519;
+  border-radius: 5%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .about-me .profile {
     margin: 5vw;
     padding: 2vw;
+    border-radius: 0%;
   }
 }
 
 .about-me .profile img {
   max-height: 40vh;
+  border-radius: 5%;
   -webkit-filter: grayscale(100%) contrast(110%) brightness(110%);
           filter: grayscale(100%) contrast(110%) brightness(110%);
 }
@@ -690,9 +986,61 @@ body a {
   cursor: none;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-me .profile img {
+    border-radius: 0%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .about-me .profile img {
     max-height: 65vh;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
   }
 }
 
@@ -709,5 +1057,6 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

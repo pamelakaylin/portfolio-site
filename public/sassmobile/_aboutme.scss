@@ -1,0 +1,79 @@
+@import '_variables';
+@import '_mixin';
+@import '_keyframes';
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 18vh 10vw;
+  color: $color_2;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  } 
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+
+    @media only screen and (min-width: 768px) {
+      h1 {
+        font-size: $font_h1;
+      }
+      p {
+        font-size: $font_h2;
+      }
+    } 
+
+    @media only screen and (min-width: 1025px) {
+      align-items: flex-start;
+      text-align: left;
+    } 
+  }
+
+  .scale-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5vh;
+    input {
+      background-color: $color_2;
+    }
+  }
+
+  .profile {
+    margin: 10vw;
+    padding: 5vw;
+    border: 6px solid $color_1;
+    border-radius: 5%;
+
+    @media only screen and (min-width: 1440px) {
+      margin: 5vw;
+      padding: 2vw;
+      border-radius: 0%;
+    } 
+    
+    img {
+      max-height: 40vh;
+      border-radius: 5%;
+
+      filter: grayscale(100%) contrast(110%) brightness(110%);
+      &:hover {
+        filter: grayscale(10%);
+        cursor: none;
+      }
+      @media only screen and (min-width: 1440px) {
+        border-radius: 0%;
+      } 
+      @media only screen and (min-width: 768px) {
+        max-height: 65vh;
+      } 
+    }
+  }
+}

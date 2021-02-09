@@ -1,0 +1,49 @@
+@import '_variables';
+@import '_keyframes';
+
+
+@mixin flexCol ($position) {
+  display: flex;
+  flex-direction: column;
+  align-items: $position;
+  justify-content: $position;
+  height: $height;
+}
+
+@mixin flexRow ($position) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $position;
+  align-items: center;
+}
+
+@mixin box ($borderCol) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12vw;
+    margin: 100;
+    border: 10px solid $borderCol;
+    border-radius: 100%;
+    position: relative;
+    width: 12vw;
+    height: 12.5vw;
+    transition-duration: 0.4s;
+    &:hover {
+      transform: scale(1.2);
+      border-radius: 0%;
+      cursor: none;
+    }
+  }
+}
+
+@mixin hover() {
+  transition-duration: 0.2s;
+  &:hover {
+    color: $color_3;
+    transform: scale(1.2);
+  }
+  cursor: none;
+}
