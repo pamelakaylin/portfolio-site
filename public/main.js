@@ -4,10 +4,12 @@ $(() => {
   $('.nav-circle').hover(function () {
     this.innerHTML = '&#128640;';
     $(this).css('background-color','transparent');
+    $(this).css('box-shadow','none');
     $(this).css('text-decoration','none');
     $(this).css('cursor','none');
   }, function () {
     this.innerHTML = '';
+    $(this).css('box-shadow','0 0 20px -1px rgba(22, 19, 75, 0.2)');
     $(this).css('background-color', color);
   })
 

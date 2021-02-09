@@ -8,13 +8,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  margin: 10vh 10vw; 
+  padding: 10vh 10vw; 
   background-color: $color_3;
   color: $color_2;
   white-space: nowrap;
 
   @media only screen and (min-width: 1025px) {
-    margin: 8vw;
+    padding: 8vw;
   }
 
   ul {

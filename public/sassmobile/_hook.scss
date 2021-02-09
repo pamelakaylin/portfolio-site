@@ -22,12 +22,14 @@
     font-size: 65px;
     border-radius: 100%;
     background-color: $color_1;
+    box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.2);
 
     @media only screen and (min-width: 1425px) {
       top: 1.5vw;
       left: 2vw;
       height: 4rem;
       width: 4rem;
+      z-index: 1;
     }  
     @media (min-width: 768px) {
       height: 5rem;
