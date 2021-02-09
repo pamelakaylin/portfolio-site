@@ -1253,6 +1253,7 @@ body a {
 
 .tech-stack .skills .skill-list div:hover {
   background-color: #ffebb4;
+  cursor: none;
 }
 
 @media screen and (min-width: 1400px) {
@@ -1335,7 +1336,7 @@ body a {
       -ms-flex-align: space-around;
           align-items: space-around;
   overflow: hidden;
-  width: 70vw;
+  width: 80vw;
   -webkit-box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.15);
           box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.15);
   padding: 5vw;
@@ -1460,6 +1461,7 @@ body a {
 
 .tech-stack .add-info .str-list .icon-str:hover {
   background-color: #fffcf5;
+  cursor: none;
 }
 
 .tech-stack .add-info .str-list .icon-str:hover .real {

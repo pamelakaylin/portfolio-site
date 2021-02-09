@@ -54,6 +54,7 @@
         padding: 3vh 1vw;
         &:hover {
           background-color: rgb(255, 235, 180);
+          cursor: none;
         }
       }
 
@@ -119,7 +120,7 @@
       justify-content: space-around;
       align-items: space-around;
       overflow: hidden;
-      width: 70vw;
+      width: 80vw;
       box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.15);
       padding: 5vw;
       margin-top: 4vw;
@@ -223,6 +224,7 @@
           .fun {
             display:inline;
           }
+          cursor: none;
         }
 
       }

@@ -25,7 +25,7 @@ $(() => {
   const contentList = [
     'Pamela Kaylin', 
     'Full-stack engineer', 
-    'Welcome to my universe', 
+    'Welcome to my space', 
     'I create my own world.'
   ];
 
