@@ -900,6 +900,7 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  height: 100vh;
   padding: 13vh 10vw;
   color: #16134b;
   background-color: #fffcf5;
@@ -914,9 +915,9 @@ body a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 18vh;
     padding-bottom: 18vh;
     padding-left: 15vw;
@@ -939,7 +940,7 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
-  padding-top: 8vh;
+  height: 75vh;
 }
 
 .about-me .profile-text .inner-text {
@@ -960,9 +961,9 @@ body a {
   margin-top: 0;
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1201px) {
   .about-me .profile-text .inner-text h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 400;
   }
 }
@@ -1079,12 +1080,6 @@ body a {
   .about-me .scale-wrapper .scale-btn .checkmark:hover {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .about-me .scale-wrapper {
-    padding-left: 5vw;
   }
 }
 
@@ -1319,7 +1314,7 @@ body a {
   .tech-stack .add-info h1 {
     font-size: 2.3rem;
     margin-top: 1vw;
-    margin-bottom: 2.5vw;
+    margin-bottom: 2vw;
     font-size: 1.8rem;
   }
 }
@@ -1388,7 +1383,7 @@ body a {
 @media screen and (min-width: 1400px) {
   .tech-stack .add-info .str-list {
     width: 35vw;
-    padding: 1vw;
+    padding: 0;
     margin: 1vw;
   }
 }
