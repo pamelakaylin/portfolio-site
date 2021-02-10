@@ -918,10 +918,18 @@ body a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 18vh;
     padding-bottom: 18vh;
-    padding-left: 15vw;
     padding-right: 10vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-me {
+    margin-bottom: 5vh;
   }
 }
 
@@ -999,23 +1007,6 @@ body a {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .about-me .profile-text .inner-text p {
     font-size: 1.7rem;
-  }
-}
-
-@media only screen and (min-width: 1439px) {
-  .about-me .profile-text {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    text-align: left;
-    width: 50%;
-    height: 70vh;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .about-me .profile-text {
-    margin-bottom: 5vh;
   }
 }
 
@@ -1383,7 +1374,7 @@ body a {
 @media screen and (min-width: 1400px) {
   .tech-stack .add-info .str-list {
     width: 35vw;
-    padding: 0;
+    padding: 1vw;
     margin: 1vw;
   }
 }
@@ -1465,5 +1456,105 @@ body a {
 
 .tech-stack .add-info .str-list .icon-str:hover .fun {
   display: inline;
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+@keyframes animateWorld {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+            transform: rotateY(360deg) rotateX(180deg) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+            transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f5c519;
+  }
+}
+
+.contact-me {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #16134b;
+  color: #f5c519;
+}
+
+.contact-me h1 {
+  font-size: 1.5rem;
+}
+
+.contact-me .contact-info {
+  position: absolute;
+  width: 100vw;
+  padding: 0 1rem;
+  bottom: 3vh;
+  left: 2vw;
+}
+
+.contact-me .contact-info p {
+  font-size: 0.8rem;
+  margin-top: 3vh;
+  font-family: "Playfair Display", serif;
+}
+
+.contact-me .contact-info .contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-me .contact-info .contact-icon a {
+  text-decoration: none;
+  color: #f5c519;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
