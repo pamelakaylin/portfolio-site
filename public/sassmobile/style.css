@@ -1516,26 +1516,35 @@ body a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  padding: 2rem;
   width: 100%;
   height: 100vh;
   background-color: #16134b;
   color: #f5c519;
+  z-index: -1;
 }
 
 .contact-me h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  line-height: 3rem;
+}
+
+.contact-me hr {
+  width: 50%;
+  height: 4px;
+  text-align: left;
+  margin-left: 0;
+  border-width: 0;
+  background-color: #f5c519;
 }
 
 .contact-me .contact-info {
-  position: absolute;
-  width: 100vw;
-  padding: 0 1rem;
-  bottom: 3vh;
-  left: 2vw;
+  padding-top: 1.5rem;
 }
 
 .contact-me .contact-info p {
@@ -1548,13 +1557,49 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-me .contact-info .contact-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: #f5c519;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 2vw;
+}
+
+.contact-me .contact-info .contact-icon a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-left: 3vw;
+}
+
+.contact-me .cp {
+  background-color: #f5c519;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  font-size: 0.8rem;
+  bottom: 0;
+  left: 0;
+  color: #16134b;
 }
 /*# sourceMappingURL=style.css.map */
