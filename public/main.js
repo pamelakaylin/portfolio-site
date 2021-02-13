@@ -76,7 +76,7 @@ $(() => {
   function langTextAnimation () {
     const langList = [
       'English.', 
-      'Mandarin', 
+      'Mandarin.', 
       'Spanish.'
     ];
 

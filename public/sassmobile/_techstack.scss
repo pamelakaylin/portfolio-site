@@ -68,13 +68,14 @@
     }
 
     @media screen and (min-width: 1025px) {
-      width: 50%;
+      width: 55%;
       padding-left: 12vw;
       border: 5px solid $color_1;
     }
   }
 
   .add-info {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -87,7 +88,7 @@
 
     // color: $color_3;
     @media screen and (min-width: 1400px) {
-      width: 50%;
+      width: 45%;
       height: 100vh;
       padding-top: 3vw;
       padding-left: 4vw;
@@ -122,14 +123,15 @@
       overflow: hidden;
       width: 80vw;
       box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.15);
+      border-radius: 7px;
       padding: 5vw;
       margin-top: 4vw;
       margin-bottom: 10vw;
 
       @media screen and (min-width: 1400px) {
-        width: 35vw;
+        width: 28vw;
         padding: 1vw;
-        padding-left: 3.5vw;
+        padding-left: 3vw;
         margin: 1vw 1vw 1.9vw 1vw;
       }
 
@@ -154,13 +156,15 @@
       justify-content: space-around;
       width: 80vw;
       box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.15);
+      border-radius: 7px;
       margin-top: 4vw;
       margin-bottom: 10vw;
 
       @media screen and (min-width: 1400px) {
-        width: 35vw;
+        width: 28vw;
         padding: 1vw;
         margin: 1vw;
+        font-size: 1.2rem;
       }
 
       .icon-str {
@@ -229,6 +233,17 @@
 
       }
       
+    }
+
+    .location-tag {
+      position: absolute;
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      font-family: $font_family3;
+      font-size: 0.9rem;
+      height: 70vh;
+      bottom: 0;
+      right: 0;
     }
   }
 }
