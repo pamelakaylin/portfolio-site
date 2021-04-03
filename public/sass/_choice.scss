@@ -1,6 +1,6 @@
-@import '_variables';
-@import '_mixin';
-@import '_keyframes';
+@import "_variables";
+@import "_mixin";
+@import "_keyframes";
 
 .choice {
   flex-direction: row;
@@ -15,14 +15,14 @@
     font: {
       family: $font_family2;
       size: $font_p;
-    }  
+    }
   }
 
   h1 {
     font-size: $font_h3;
     white-space: nowrap;
   }
-  
+
   .about-div {
     @include box($color_1);
     display: flex;
@@ -33,7 +33,6 @@
     background-color: $color_2;
     color: $color_1;
     width: 50vw;
-    
   }
 
   .contact-div {
@@ -47,8 +46,7 @@
     width: 50vw;
   }
 
-  @media only screen and (min-width: 1425px) {
-    display: flex;
-  }  
-
+  // @media only screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
 }

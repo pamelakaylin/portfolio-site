@@ -88,8 +88,6 @@
     .resume {
       @include hover();
       border: 2px solid $color_1;
-      border-radius: 8%;
-
       display: inline-block;
       text-decoration: none;
       padding: 1vh 2vw;

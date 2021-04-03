@@ -29,7 +29,7 @@ $(() => {
     const contentList = [
       "Pamela Kaylin",
       "Full Stack Developer",
-      "Welcome to my space",
+      "Welcome to my space.",
     ];
 
     let text = $("#type-text")[0];
