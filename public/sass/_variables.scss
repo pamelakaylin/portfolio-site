@@ -1,9 +1,9 @@
 $color_1: #f5c519;
 $liteColor1: #f3e73f;
 $altCol1: #f5b419;
-$color_2: #16134b;
+$color_2: rgb(22, 19, 75);
 $liteColor2: #1b2979;
-$color_3: #fffefb;
+$color_3: #fffcf5;
 $color_4: #040610;
 // random other color #070a1a; // f0a900;
 
@@ -12,8 +12,12 @@ $font_h1: 4rem;
 $font_h3: 2.5rem;
 $font_h2: 1.5rem;
 $font_p: 1.2rem;
-$font_family: 'Poppins', sans-serif;
-$font_family2: 'Playfair Display', serif;;
+$font_family: 'Roboto Mono', monospace; 
+// 'Source Code Pro', monospace; 
+// 'Roboto Mono', monospace;;
+$font_family2: 'Playfair Display', serif;
+$font_family3: 'Open Sans', sans-serif;
+// 'Montserrat', sans-serif;
 $cursor: url(../images/cursorXS.png), auto;
 $cursorDown: url(../images/cursorarrow.png), auto;
 ;
