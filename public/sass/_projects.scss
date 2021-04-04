@@ -3,6 +3,7 @@
 @import "_keyframes";
 
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -15,6 +16,52 @@
 
   @media only screen and (min-width: 1025px) {
     padding: 8vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color_2;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .preview {
+    animation: fadeIn ease 0.3s;
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
+    background: radial-gradient(#fefceb, rgba(255, 255, 255, 0));
+    right: 2vw;
+    top: 5vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    @media only screen and (min-width: 1200px) {
+      height: 100vh;
+      width: 60vw;
+    }
+
+    .phone {
+      height: 450px;
+      position: absolute;
+      z-index: 1;
+      @media only screen and (min-width: 760px) {
+        height: 518px;
+      }
+    }
+
+    .content {
+      height: 420px;
+      position: absolute;
+      @media only screen and (min-width: 760px) {
+        height: 485px;
+      }
+    }
   }
 
   ul {
@@ -31,6 +78,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      &:hover {
+        .preview {
+          display: flex;
+        }
       }
     }
   }

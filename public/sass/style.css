@@ -27,7 +27,8 @@
 }
 
 @-webkit-keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
@@ -36,11 +37,30 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -59,11 +79,21 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -82,11 +112,21 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -105,11 +145,21 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -144,11 +194,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -167,11 +227,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -553,11 +623,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -576,7 +656,8 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
@@ -584,7 +665,17 @@ body a {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .projects {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,6 +704,67 @@ body a {
   }
 }
 
+.projects a {
+  text-decoration: none;
+  color: #16134b;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.projects a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects .preview {
+  -webkit-animation: fadeIn ease 0.3s;
+          animation: fadeIn ease 0.3s;
+  position: absolute;
+  height: 60vh;
+  width: 100vw;
+  background: radial-gradient(#fefceb, rgba(255, 255, 255, 0));
+  right: 2vw;
+  top: 5vw;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects .preview {
+    height: 100vh;
+    width: 60vw;
+  }
+}
+
+.projects .preview .phone {
+  height: 450px;
+  position: absolute;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 760px) {
+  .projects .preview .phone {
+    height: 518px;
+  }
+}
+
+.projects .preview .content {
+  height: 420px;
+  position: absolute;
+}
+
+@media only screen and (min-width: 760px) {
+  .projects .preview .content {
+    height: 485px;
+  }
+}
+
 .projects ul {
   list-style-type: none;
   padding: 0;
@@ -635,6 +787,12 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.projects ul li:hover .preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects h2 {
@@ -688,11 +846,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -711,11 +879,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -862,11 +1040,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -885,11 +1073,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1108,11 +1306,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1131,11 +1339,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1314,11 +1532,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1337,11 +1565,21 @@ body a {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     background-color: transparent;
   }
   50% {
     background-color: #f5c519;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
