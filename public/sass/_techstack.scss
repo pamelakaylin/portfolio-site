@@ -19,10 +19,6 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @media screen and (min-width: 1400px) {
-      // align-items: center;
-    }
-
     .skill-list {
       opacity: 0.9;
       color: $color_2;
@@ -77,6 +73,9 @@
 
             &:hover {
               transform: scale(1.1);
+              h2 {
+                color: $color_2;
+              }
             }
           }
         }
@@ -103,6 +102,7 @@
     @media screen and (min-width: 1025px) {
       padding-left: 12vw;
       border-top: 5px solid $color_1;
+      border-bottom: 5px solid $color_1;
       margin-right: 10vw;
       margin-left: 10vw;
     }
