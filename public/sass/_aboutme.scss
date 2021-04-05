@@ -11,7 +11,9 @@
   height: fit-content;
   padding: 6vh 10vw;
   color: $color_3;
-  background-color: $color_2;
+  background: linear-gradient(#0c0b2f, #1b175c);
+
+  // background-color: $color_2;
 
   @media only screen and (min-width: 1025px) {
     // color: $color_2;

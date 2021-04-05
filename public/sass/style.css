@@ -246,7 +246,8 @@ body a {
 }
 
 .hook {
-  background-color: #16134b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c0b2f), to(#1b175c));
+  background: linear-gradient(#0c0b2f, #1b175c);
   height: 100vh;
   position: relative;
 }
@@ -696,6 +697,8 @@ body a {
   background-color: #fefceb;
   color: #16134b;
   white-space: nowrap;
+  border-top: 5px solid #f5c519;
+  border-bottom: 5px solid #f5c519;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -782,6 +785,12 @@ body a {
   }
 }
 
+@media only screen and (min-width: 1500px) {
+  .projects .preview .laptop {
+    width: 900px;
+  }
+}
+
 .projects .preview .lap-content {
   z-index: 1;
   width: 220px;
@@ -797,6 +806,12 @@ body a {
 @media only screen and (min-width: 1200px) {
   .projects .preview .lap-content {
     width: 520px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .projects .preview .lap-content {
+    width: 680px;
   }
 }
 
@@ -1146,7 +1161,8 @@ body a {
   height: fit-content;
   padding: 6vh 10vw;
   color: #fefceb;
-  background-color: #16134b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c0b2f), to(#1b175c));
+  background: linear-gradient(#0c0b2f, #1b175c);
 }
 
 @media only screen and (min-width: 1025px) {
@@ -1406,6 +1422,8 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
+  border-top: 5px solid #f5c519;
+  border-bottom: 5px solid #f5c519;
 }
 
 .tech-stack .skills {
@@ -1530,8 +1548,6 @@ body a {
 @media screen and (min-width: 1025px) {
   .tech-stack .skills {
     padding-left: 12vw;
-    border-top: 5px solid #f5c519;
-    border-bottom: 5px solid #f5c519;
     margin-right: 10vw;
     margin-left: 10vw;
   }
@@ -1637,7 +1653,8 @@ body a {
   padding: 2rem;
   width: 100%;
   height: 100vh;
-  background-color: #16134b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c0b2f), to(#1b175c));
+  background: linear-gradient(#0c0b2f, #1b175c);
   color: #f5c519;
 }
 

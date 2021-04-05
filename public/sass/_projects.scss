@@ -13,6 +13,8 @@
   background-color: $color_3;
   color: $color_2;
   white-space: nowrap;
+  border-top: 5px solid $color_1;
+  border-bottom: 5px solid $color_1;
 
   @media only screen and (min-width: 1025px) {
     padding: 8vw;
@@ -73,6 +75,10 @@
       @media only screen and (min-width: 1200px) {
         width: 700px;
       }
+
+      @media only screen and (min-width: 1500px) {
+        width: 900px;
+      }
     }
 
     .lap-content {
@@ -85,6 +91,10 @@
 
       @media only screen and (min-width: 1200px) {
         width: 520px;
+      }
+
+      @media only screen and (min-width: 1500px) {
+        width: 680px;
       }
     }
   }
