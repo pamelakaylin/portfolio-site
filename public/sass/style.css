@@ -1670,6 +1670,12 @@ body a {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .contact-me .contact-text .type-text {
+    width: 52vw;
+  }
+}
+
 .contact-me .contact-text h1 {
   font-size: 2rem;
   padding-bottom: 1rem;
