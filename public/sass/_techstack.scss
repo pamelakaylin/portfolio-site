@@ -37,7 +37,7 @@
         }
       }
 
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         display: flex;
         font-weight: 600;
         width: 85vw;
@@ -50,7 +50,7 @@
       .skill-section {
         display: flex;
 
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 1200px) {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -63,7 +63,7 @@
             color: $color_1;
           }
 
-          @media screen and (min-width: 1400px) {
+          @media screen and (min-width: 1200px) {
             width: fit-content;
             transition-duration: 0.3s;
 
@@ -85,7 +85,7 @@
           border-left: 1px solid $color_2;
           padding-left: 5vw;
 
-          @media screen and (min-width: 1400px) {
+          @media screen and (min-width: 1200px) {
             margin-left: 0;
             margin-top: 3vw;
             padding-left: 2vw;
@@ -115,7 +115,7 @@
     font-size: 1.8rem;
     font-family: $font_family;
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1200px) {
       font-size: 3rem;
     }
   }

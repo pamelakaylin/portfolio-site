@@ -25,7 +25,7 @@
       justify-content: flex-start;
       width: 75vw;
 
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         width: 65vw;
       }
     }
@@ -34,7 +34,7 @@
       font-size: 2rem;
       padding-bottom: 1rem;
       line-height: 3rem;
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         padding-top: 15vh;
         padding-left: 4vw;
         padding-bottom: 0;
@@ -49,7 +49,7 @@
       font-family: $font_family;
       font-weight: 200;
       font-size: 1rem;
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         display: block;
       }
     }
@@ -61,7 +61,7 @@
       margin-left: 0;
       border-width: 0;
       background-color: $color_1;
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         display: none;
       }
     }
@@ -90,7 +90,7 @@
         font-size: 1.8rem;
         margin: 2vw;
 
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 1200px) {
           margin: 1vw;
         }
         p {
@@ -100,13 +100,13 @@
           font-size: $font_p;
           margin: 0;
           padding-left: 3vw;
-          @media screen and (min-width: 1400px) {
+          @media screen and (min-width: 1200px) {
             padding-left: 1vw;
           }
         }
       }
     }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
@@ -207,7 +207,7 @@
       }
     }
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1200px) {
       display: block;
     }
   }
@@ -223,7 +223,7 @@
     color: $color_2;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
     align-items: center;
     z-index: 0;
