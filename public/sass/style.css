@@ -414,12 +414,14 @@ body a {
   text-align: right;
   right: 4vw;
   top: 6vw;
+  z-index: 3;
 }
 
 .hook .side-bar a {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   cursor: none;
+  z-index: 3;
   text-decoration: none;
   color: #f5c519;
   margin-top: 2.4vh;
@@ -455,12 +457,14 @@ body a {
   position: absolute;
   left: 3.5vw;
   top: 7.5vw;
+  z-index: 3;
 }
 
 .hook .icon-div a {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   cursor: none;
+  z-index: 3;
   color: #f5c519;
   text-decoration: none;
   margin-top: 1.1vw;
@@ -496,13 +500,15 @@ body a {
           align-items: center;
   height: 10%;
   padding: 3vw 4vw;
-  z-index: 1;
+  position: relative;
+  z-index: 3;
 }
 
 .hook .nav-bar .resume {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   cursor: none;
+  z-index: 3;
   border: 2px solid #f5c519;
   display: inline-block;
   text-decoration: none;
@@ -553,7 +559,6 @@ body a {
 .hook .intro-text .world {
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  z-index: 1;
   padding-top: 15vh;
 }
 
