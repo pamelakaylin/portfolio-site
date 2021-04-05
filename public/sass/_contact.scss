@@ -13,8 +13,6 @@
   width: 100%;
   height: 100vh;
   background: linear-gradient(#0c0b2f, #1b175c);
-
-  // background-color: $color_2;
   color: $color_1;
 
   .contact-text {
@@ -227,6 +225,11 @@
     bottom: 0;
     left: 0;
     color: $color_2;
+  }
+
+  @media screen and (min-width: 760px) {
+    align-items: flex-start;
+    padding-left: 5rem;
   }
 
   @media screen and (min-width: 1200px) {

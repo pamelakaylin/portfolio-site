@@ -3,10 +3,36 @@
 @import "_keyframes";
 
 .hook {
-  background: linear-gradient(#0c0b2f, #1b175c);
+  background: linear-gradient(-45deg, #0c0b2f, #1b175c, #1a1584, #2920c4);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  // background-color: #1b175c;
+  // background-image: url("https://www.transparenttextures.com/patterns/stardust.png"),
+  //   linear-gradient(-45deg, #0c0b2f, #1b175c, #2119b3);
+  // background-repeat: repeat;
+  // background: linear-gradient(#0c0b2f, #2119b3);
+  // // background-size: 400% 400%;
+  // animation: changeColor 2s ease infinite;
   // background-color: #16134b;
+  position: relative;
+  overflow: hidden;
   height: $height;
   position: relative;
+
+  .bg-wrap {
+    position: absolute;
+    .bg-image {
+      width: 100vw;
+      @media only screen and (min-width: 1200px) {
+        height: 100vh;
+        width: 50vw;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
 
   .rocket {
     position: absolute;
@@ -85,6 +111,7 @@
     align-items: center;
     height: 10%;
     padding: 3vw 4vw;
+    z-index: 1;
 
     .resume {
       @include hover();
