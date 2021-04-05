@@ -724,7 +724,7 @@ body a {
   width: 100vw;
   background: radial-gradient(#fefceb, rgba(255, 255, 255, 0));
   right: 2vw;
-  top: 5vw;
+  top: 10vw;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -762,6 +762,41 @@ body a {
 @media only screen and (min-width: 760px) {
   .projects .preview .content {
     height: 485px;
+  }
+}
+
+.projects .preview .laptop {
+  width: 300px;
+  position: absolute;
+}
+
+@media only screen and (min-width: 760px) {
+  .projects .preview .laptop {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects .preview .laptop {
+    width: 700px;
+  }
+}
+
+.projects .preview .lap-content {
+  z-index: 1;
+  width: 220px;
+  position: absolute;
+}
+
+@media only screen and (min-width: 760px) {
+  .projects .preview .lap-content {
+    width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects .preview .lap-content {
+    width: 520px;
   }
 }
 

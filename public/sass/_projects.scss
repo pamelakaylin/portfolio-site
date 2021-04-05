@@ -35,7 +35,7 @@
     width: 100vw;
     background: radial-gradient(#fefceb, rgba(255, 255, 255, 0));
     right: 2vw;
-    top: 5vw;
+    top: 10vw;
     display: none;
     justify-content: center;
     align-items: center;
@@ -60,6 +60,31 @@
       position: absolute;
       @media only screen and (min-width: 760px) {
         height: 485px;
+      }
+    }
+
+    .laptop {
+      width: 300px;
+      position: absolute;
+      @media only screen and (min-width: 760px) {
+        width: 500px;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        width: 700px;
+      }
+    }
+
+    .lap-content {
+      z-index: 1;
+      width: 220px;
+      position: absolute;
+      @media only screen and (min-width: 760px) {
+        width: 380px;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        width: 520px;
       }
     }
   }
