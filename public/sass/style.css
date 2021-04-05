@@ -330,7 +330,7 @@ body a {
 }
 
 .hook {
-  background: linear-gradient(-45deg, #0c0b2f, #1b175c, #1a1584, #2920c4);
+  background: linear-gradient(-45deg, #0c0b2f, #1b175c, #1a1584);
   background-size: 400% 400%;
   -webkit-animation: gradient 5s ease infinite;
           animation: gradient 5s ease infinite;
