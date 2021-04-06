@@ -28,7 +28,7 @@ $(() => {
   function titleTextAnimation() {
     const contentList = [
       "Pamela Kaylin",
-      "Full Stack Developer",
+      "Full Stack Engineer",
       "Welcome to my space.",
     ];
 
