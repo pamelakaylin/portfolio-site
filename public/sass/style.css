@@ -885,6 +885,10 @@ body a {
   }
 }
 
+.projects .preview:hover {
+  display: none;
+}
+
 .projects .preview .phone {
   height: 450px;
   position: absolute;
