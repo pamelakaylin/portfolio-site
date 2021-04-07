@@ -116,8 +116,8 @@
       }
 
       &:hover,
-      :active,
-      :focus {
+      &:active,
+      &:focus {
         .preview {
           display: flex;
         }
