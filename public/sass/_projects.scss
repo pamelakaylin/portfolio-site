@@ -48,6 +48,12 @@
       width: 60vw;
     }
 
+    &:hover {
+      .preview {
+        display: none;
+      }
+    }
+
     .phone {
       height: 450px;
       position: absolute;
