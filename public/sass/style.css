@@ -841,6 +841,10 @@ body a {
   border-bottom: 5px solid #f5c519;
 }
 
+.projects:hover .preview {
+  display: none;
+}
+
 @media only screen and (min-width: 1025px) {
   .projects {
     padding: 8vw;
@@ -883,10 +887,6 @@ body a {
     height: 100vh;
     width: 60vw;
   }
-}
-
-.projects .preview:hover {
-  display: none;
 }
 
 .projects .preview .phone {

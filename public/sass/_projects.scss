@@ -16,6 +16,12 @@
   border-top: 5px solid $color_1;
   border-bottom: 5px solid $color_1;
 
+  &:hover {
+    .preview {
+      display: none;
+    }
+  }
+
   @media only screen and (min-width: 1025px) {
     padding: 8vw;
   }
@@ -46,10 +52,6 @@
     @media only screen and (min-width: 1200px) {
       height: 100vh;
       width: 60vw;
-    }
-
-    &:hover {
-      display: none;
     }
 
     .phone {
