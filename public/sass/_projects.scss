@@ -115,7 +115,9 @@
         align-items: center;
       }
 
-      &:hover {
+      &:hover,
+      :active,
+      :focus {
         .preview {
           display: flex;
         }
