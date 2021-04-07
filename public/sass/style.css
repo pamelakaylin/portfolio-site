@@ -887,6 +887,7 @@ body a {
   .projects .preview {
     height: 100vh;
     width: 60vw;
+    top: 10vw;
   }
 }
 
