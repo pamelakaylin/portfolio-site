@@ -379,6 +379,7 @@ body a {
   background-color: #f5c519;
   -webkit-box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.2);
           box-shadow: 0 0 20px -1px rgba(22, 19, 75, 0.2);
+  z-index: 5;
 }
 
 @media (min-width: 768px) {
