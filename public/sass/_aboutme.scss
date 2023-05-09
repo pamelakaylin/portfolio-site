@@ -65,6 +65,10 @@
       }
 
       p {
+        a {
+          color: honeydew;
+        }
+
         font-family: $font_family3;
         @media only screen and (min-width: 768px) {
           font-size: 1.7rem;

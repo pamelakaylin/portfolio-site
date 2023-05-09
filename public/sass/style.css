@@ -1454,6 +1454,10 @@ body a {
   font-family: "Open Sans", sans-serif;
 }
 
+.about-me .profile-text .inner-text p a {
+  color: honeydew;
+}
+
 @media only screen and (min-width: 768px) {
   .about-me .profile-text .inner-text p {
     font-size: 1.7rem;
